@@ -15,6 +15,7 @@
 		1163C6872872E59500C071B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1163C6852872E59500C071B4 /* Main.storyboard */; };
 		1163C6892872E59600C071B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1163C6882872E59600C071B4 /* Assets.xcassets */; };
 		1163C68C2872E59600C071B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1163C68A2872E59600C071B4 /* LaunchScreen.storyboard */; };
+		1163C6A12872EE5D00C071B4 /* wackSlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1163C6A02872EE5D00C071B4 /* wackSlot.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		1163C68B2872E59600C071B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1163C69E2872E73100C071B4 /* whackBad.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = whackBad.caf; sourceTree = "<group>"; };
 		1163C69F2872E73100C071B4 /* whack.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = whack.caf; sourceTree = "<group>"; };
+		1163C6A02872EE5D00C071B4 /* wackSlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wackSlot.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				1163C67F2872E59500C071B4 /* Actions.sks */,
 				1163C6812872E59500C071B4 /* GameScene.swift */,
 				1163C6832872E59500C071B4 /* GameViewController.swift */,
+				1163C6A02872EE5D00C071B4 /* wackSlot.swift */,
 				1163C6852872E59500C071B4 /* Main.storyboard */,
 				1163C6882872E59600C071B4 /* Assets.xcassets */,
 				1163C68A2872E59600C071B4 /* LaunchScreen.storyboard */,
@@ -149,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1163C6822872E59500C071B4 /* GameScene.swift in Sources */,
+				1163C6A12872EE5D00C071B4 /* wackSlot.swift in Sources */,
 				1163C6842872E59500C071B4 /* GameViewController.swift in Sources */,
 				1163C67C2872E59500C071B4 /* AppDelegate.swift in Sources */,
 			);
