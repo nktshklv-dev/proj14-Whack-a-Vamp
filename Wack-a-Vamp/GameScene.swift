@@ -16,6 +16,7 @@ class GameScene: SKScene {
             gameScore.text = "Score: \(score)"
         }
     }
+    var numRounds = 0
     
     var popupTime = 0.90
     
@@ -45,7 +46,31 @@ class GameScene: SKScene {
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        guard let touch = touches.first else {return}
+        let location = touch.location(in: self)
+        let tappedNodes = nodes(at: location)
         
+        for node in tappedNodes {
+            
+            guard let slot = node.parent?.parent as? wackSlot else {continue}
+            
+            if slot.isVisible == false {continue}
+            if slot.isHit {continue}
+            slot.hit()
+            if node.name == "charFriend"{
+                //they shouldn't have whacked that penguin
+                score -= 5
+                run(SKAction.playSoundFileNamed("whackBad.caf", waitForCompletion: true))
+                    
+            }
+            else if node.name == "charEnemy"{
+                slot.charNode.xScale = 0.85
+                slot.charNode.yScale = 0.85
+                score += 1
+                
+                run(SKAction.playSoundFileNamed("whack.caf", waitForCompletion: true))
+            }
+        }
     }
     
     func createSlot(at position: CGPoint){
@@ -57,6 +82,19 @@ class GameScene: SKScene {
     
     
     func createEnemy(){
+        numRounds += 1
+        
+        if numRounds >= 30{
+            for slot in slots {
+                slot.hide()
+            }
+            
+            let gameOver = SKSpriteNode(imageNamed: "gameOver")
+            gameOver.position = CGPoint(x: 512, y: 384)
+            gameOver.zPosition = 1
+            addChild(gameOver)
+            return
+        }
         popupTime *= 0.999
         slots.shuffle()
         slots[0].show(hideTime: popupTime)

@@ -16,6 +16,8 @@
 		1163C6892872E59600C071B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1163C6882872E59600C071B4 /* Assets.xcassets */; };
 		1163C68C2872E59600C071B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1163C68A2872E59600C071B4 /* LaunchScreen.storyboard */; };
 		1163C6A12872EE5D00C071B4 /* wackSlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1163C6A02872EE5D00C071B4 /* wackSlot.swift */; };
+		1163C6A228759A9900C071B4 /* whack.caf in Resources */ = {isa = PBXBuildFile; fileRef = 1163C69F2872E73100C071B4 /* whack.caf */; };
+		1163C6A328759A9B00C071B4 /* whackBad.caf in Resources */ = {isa = PBXBuildFile; fileRef = 1163C69E2872E73100C071B4 /* whackBad.caf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -141,6 +143,8 @@
 				1163C6892872E59600C071B4 /* Assets.xcassets in Resources */,
 				1163C68C2872E59600C071B4 /* LaunchScreen.storyboard in Resources */,
 				1163C6802872E59500C071B4 /* Actions.sks in Resources */,
+				1163C6A228759A9900C071B4 /* whack.caf in Resources */,
+				1163C6A328759A9B00C071B4 /* whackBad.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
