@@ -49,6 +49,7 @@ class wackSlot: SKNode {
             charNode.name = "charEnemy"
         }
         
+        
         DispatchQueue.main.asyncAfter(deadline: .now() + (hideTime * 3.5)){
             [weak self] in self?.hide()
         }
