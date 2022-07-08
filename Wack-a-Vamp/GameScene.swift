@@ -58,7 +58,7 @@ class GameScene: SKScene {
             if slot.isHit {continue}
             slot.hit()
             if node.name == "charFriend"{
-                //they shouldn't have whacked that penguin
+                 
                 score -= 5
                 run(SKAction.playSoundFileNamed("whackBad.caf", waitForCompletion: true))
                     
