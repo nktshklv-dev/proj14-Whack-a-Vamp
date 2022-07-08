@@ -44,7 +44,7 @@ class GameScene: SKScene {
         let tappedNodes = nodes(at: location)
         
         for node in tappedNodes {
-            
+            //?
             guard let slot = node.parent?.parent as? wackSlot else {continue}
             
             if slot.isVisible == false {continue}
