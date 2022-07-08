@@ -1,10 +1,3 @@
-//
-//  GameScene.swift
-//  Wack-a-Vamp
-//
-//  Created by Nikita  on 7/4/22.
-//
-
 import SpriteKit
 
 class GameScene: SKScene {
@@ -58,10 +51,9 @@ class GameScene: SKScene {
             if slot.isHit {continue}
             slot.hit()
             if node.name == "charFriend"{
-                 
                 score -= 5
+                
                 run(SKAction.playSoundFileNamed("whackBad.caf", waitForCompletion: true))
-                    
             }
             else if node.name == "charEnemy"{
                 slot.charNode.xScale = 0.85
